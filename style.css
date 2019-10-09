@@ -1,0 +1,105 @@
+body {
+    background-color: #3a3a3a;
+    margin: 0;
+}
+
+p {
+    margin: 5px;
+    word-wrap: break-word;
+}
+
+#main {
+    top: 12vh;
+    position: relative;
+    background-color: #ededed;
+    width: 80%;
+    height: 100vh;
+    z-index: -1;
+}
+
+#menubar {
+    position: fixed;
+    background-color: #002a32;
+    width: 100%;
+    height: 8vh;
+    margin: 0;
+    padding: 0;
+    z-index: 5000;
+}
+
+#menu1,
+#menu21,
+#menu22,
+#menu23:hover {
+    cursor: pointer;
+}
+
+#menu1 {
+    font-family: Rubik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #00d6d6;
+    padding-top: 3vh;
+    position: relative;
+    width: 25%;
+    display: inline-block;
+}
+
+#menu1down {
+    width: 100%;
+    position: fixed;
+    top: 8vh;
+}
+
+#menu21 {
+    left: 1%;
+    /* visibility: visible; */
+    visibility: hidden;
+    top: 8vh;
+    background-color: red;
+    font-family: Rubik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #00d6d6;
+    position: fixed;
+    width: 23%;
+    text-align: center;
+}
+
+#menu22 {
+    left: 26%;
+    /* visibility: visible; */
+    visibility: hidden;
+    top: 8vh;
+    background-color: red;
+    font-family: Rubik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #00d6d6;
+    position: fixed;
+    width: 23%;
+    text-align: center;
+}
+
+#menu23 {
+    left: 52%;
+    /* visibility: visible; */
+    visibility: hidden;
+    top: 8vh;
+    background-color: red;
+    font-family: Rubik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #00d6d6;
+    position: fixed;
+    width: 23%;
+    text-align: center;
+}
+
+#dropdownicon1,
+#dropdownicon2,
+#dropdownicon3 {
+    padding-left: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+.rotateimg180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
