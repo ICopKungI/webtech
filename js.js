@@ -39,7 +39,6 @@ function loop_write(myObj) {
 
 function loop_write_img(myObj) {
 	for (let i = 0; i < myObj.length; i++) {
-		console.log(myObj[i]);
 		document.write('<img src=\"' + myObj[i] + "\" width=\"300px\" height=\"300px\">");
 	}
 }
