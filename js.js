@@ -15,6 +15,7 @@ function write(myObj) {
 		loop_write(myObj.contagion[i].symptom);
 		loop_write(myObj.contagion[i].therapy);
 		loop_write(myObj.contagion[i].protect);
+		loop_write_img(myObj.contagion[i].img);
 	}
 
 	for (let i = 0; i < myObj.contagion.length; i++) {
@@ -23,6 +24,7 @@ function write(myObj) {
 		loop_write(myObj.n_contagion[i].symptom);
 		loop_write(myObj.n_contagion[i].therapy);
 		loop_write(myObj.n_contagion[i].protect);
+		loop_write_img(myObj.n_contagion[i].img);
 	}
 }
 
@@ -33,4 +35,11 @@ function loop_write(myObj) {
 		document.write('<li>' + myObj[i]);
 	}
 	document.write('</ul>');
+}
+
+function loop_write_img(myObj) {
+	for (let i = 0; i < myObj.length; i++) {
+		console.log(myObj[i]);
+		document.write('<img src=\"' + myObj[i] + "\" width=\"300px\" height=\"300px\">");
+	}
 }
