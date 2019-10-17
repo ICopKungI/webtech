@@ -1,4 +1,5 @@
 function start(type, num) {
+    document.getElementById("main").style.height = "100%";
     let requestURL = 'data.json';
     let request = new XMLHttpRequest();
     request.onreadystatechange = function() {
@@ -40,7 +41,7 @@ function loop_write(myObj) {
     for (let i = 1; i < myObj.length; i++) {
         ans += ('<li>' + myObj[i] + '\n');
     }
-    ans +=  ('</ul>\n');
+    ans += ('</ul>\n');
     return ans
 }
 

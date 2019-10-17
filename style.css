@@ -24,6 +24,7 @@ p {
 }
 
 #menubar {
+    top: 0%;
     position: fixed;
     background-color: #002a32;
     width: 100%;
