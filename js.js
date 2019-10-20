@@ -25,7 +25,7 @@ function write(myObj, type, num) {
         ans += loop_write_img(myObj.contagion[num].img);
     } else {
         ans += ('<p class=\"head1\">' + myObj.n_contagion[num].disease[0] + '</p><br>\n');
-        ans += ('<p class=\"head2\">&emsp;&emsp;' + myObj.n_contagion[num].disease[1] + '</p><br>\n');
+        ans += ('<p class=\"head2\">&emsp;&emsp;&emsp;' + myObj.n_contagion[num].disease[1] + '</p><br>\n');
         ans += loop_write(myObj.n_contagion[num].cause);
         ans += loop_write(myObj.n_contagion[num].symptom);
         ans += loop_write(myObj.n_contagion[num].therapy);
@@ -37,7 +37,7 @@ function write(myObj, type, num) {
 
 function loop_write(myObj) {
     let ans = "";
-    ans += ('<p class=\"head2\"><b>' + myObj[0] + '</b> ' + myObj[1] + '</p>\n');
+    ans += ('<p class=\"head2\"><b>&emsp;&emsp;&emsp;' + myObj[0] + '</b> ' + myObj[1] + '</p>\n');
     ans += ('<ul>\n');
     for (let i = 2; i < myObj.length; i++) {
         ans += ('<li>' + myObj[i] + '\n');
