@@ -17,14 +17,15 @@ function write(myObj, type, num) {
     let main = document.getElementById("main");
     main.innerHTML = "";
     if (type == 1) {
-        ans += ("<h1>" + myObj.contagion[num].disease + "</h1>\n");
+        ans += ("<p class=\"head1\">" + myObj.contagion[num].disease[0] + "</p><br>\n");
         ans += loop_write(myObj.contagion[num].cause);
         ans += loop_write(myObj.contagion[num].symptom);
         ans += loop_write(myObj.contagion[num].therapy);
         ans += loop_write(myObj.contagion[num].protect);
         ans += loop_write_img(myObj.contagion[num].img);
     } else {
-        ans += ('<h1>' + myObj.n_contagion[num].disease + '</h1>\n');
+        ans += ('<p class=\"head1\">' + myObj.n_contagion[num].disease[0] + '</p><br>\n');
+        ans += ('<p class=\"head2\">&emsp;&emsp;' + myObj.n_contagion[num].disease[1] + '</p><br>\n');
         ans += loop_write(myObj.n_contagion[num].cause);
         ans += loop_write(myObj.n_contagion[num].symptom);
         ans += loop_write(myObj.n_contagion[num].therapy);
@@ -36,9 +37,9 @@ function write(myObj, type, num) {
 
 function loop_write(myObj) {
     let ans = "";
-    ans += ('<h4>' + myObj[0] + '</h4>\n');
+    ans += ('<p class=\"head2\"><b>' + myObj[0] + '</b> ' + myObj[1] + '</p>\n');
     ans += ('<ul>\n');
-    for (let i = 1; i < myObj.length; i++) {
+    for (let i = 2; i < myObj.length; i++) {
         ans += ('<li>' + myObj[i] + '\n');
     }
     ans += ('</ul>\n');

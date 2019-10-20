@@ -15,12 +15,16 @@ p {
 }
 
 #main {
+    padding: 2%;
     top: 12vh;
     position: relative;
-    background-color: #ededed;
+    background-color: #ffffff;
     width: 80%;
     height: 100vh;
     z-index: -1;
+    margin-left: 8%;
+    margin-bottom: 1.75%;
+    border-radius: 70px;
 }
 
 #menubar {
@@ -69,6 +73,8 @@ p {
     position: fixed;
     width: 23%;
     text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #menu22 {
@@ -83,6 +89,8 @@ p {
     position: fixed;
     width: 23%;
     text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 
@@ -102,6 +110,7 @@ p {
 #menu21 p:hover,
 #menu22 p:hover {
     background-color: gray;
+    border-radius: 10px;
 }
 
 #homeicon {
@@ -148,4 +157,18 @@ p {
 #myBtn:hover {
     background-color: #555;
     /* Add a dark-grey background on hover */
+}
+
+.head1{
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.head2, li{
+    font-size: 21px;
+}
+
+b{
+    font-size: 23px;
 }
