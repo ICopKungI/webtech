@@ -25,7 +25,7 @@ p {
     z-index: -1;
     margin-left: 8%;
     margin-bottom: 1.75%;
-    border-radius: 70px;
+    border-radius: 35px;
 }
 
 #menubar {
@@ -179,8 +179,14 @@ b{
     color: white;
 }
 
-img{
+.photo{
     border-radius: 15px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 37.5%;
+    height: auto;
 }
 
 li{
