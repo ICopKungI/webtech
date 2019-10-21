@@ -11,8 +11,7 @@ function menu(x) {
             document.getElementById("menu22").style.visibility = "hidden";
             document.querySelector("#dropdownicon2").setAttribute("class", "");
         }
-    }
-    if (x == '2') {
+    } else if (x == '2') {
         let menu = document.getElementById("menu22");
         let drop = document.querySelector("#dropdownicon2");
         if (menu.style.visibility == "visible") {
@@ -23,6 +22,19 @@ function menu(x) {
             drop.setAttribute("class", "rotateimg180");
             document.getElementById("menu21").style.visibility = "hidden";
             document.querySelector("#dropdownicon1").setAttribute("class", "");
+        }
+    } else if (x == '3') {
+        let menu = document.getElementById("menu21");
+        let drop = document.querySelector("#dropdownicon1");
+        if (menu.style.visibility == "visible") {
+            menu.style.visibility = "hidden";
+            drop.setAttribute("class", "");
+        }
+        let menu2 = document.getElementById("menu22");
+        let drop2 = document.querySelector("#dropdownicon2");
+        if (menu2.style.visibility == "visible") {
+            menu2.style.visibility = "hidden";
+            drop2.setAttribute("class", "");
         }
     }
     // if (x == '3') {

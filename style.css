@@ -5,6 +5,7 @@ html {
 body {
     background-color: #6fd2d8;
     margin: 0;
+    z-index: 500;
     /* background-image: url(https://scontent.fbkk6-2.fna.fbcdn.net/v/t1.0-1/p240x240/26903943_907729689392329_3488043223134455956_n.jpg?_nc_cat=101&_nc_eui2=AeF6n27XaBYMe_oZrbo-igVBkDoQ4PgchpF-9XqxEW_btvRc-jprm7czV92AsKfYlXmg8epU4Wn_m32JGKj4mAoTXs1gS1t6ePzNj6nquUH0ww&_nc_oc=AQn0OkAJHASL_HgGh5u2mmglHsNVT4xe3558HwkCFQZnITsZjvYydKoD46zZvdmtRrI&_nc_ht=scontent.fbkk6-2.fna&oh=8c8080ff463ced6a47e297f528c83a9b&oe=5E2935EF); */
 }
 
@@ -26,6 +27,7 @@ p {
     margin-left: 8%;
     margin-bottom: 1.75%;
     border-radius: 35px;
+    z-index: 700;
 }
 
 #menubar {
@@ -35,7 +37,6 @@ p {
     height: 8vh;
     margin: 0;
     padding: 0;
-    z-index: 5000;
 }
 
 #homeicon,
@@ -154,32 +155,38 @@ p {
     /* Chang background color on hover */
 }
 
-.head1{
+.head1 {
     text-align: center;
     font-size: 44px;
     font-weight: bold;
 }
 
-.head2, li{
+.head2,
+li {
     font-size: 21px;
 }
 
-b{
+b {
     font-size: 23px;
 }
 
-#menu21, #menu22, #menubar, #myBtn{
+#menu21,
+#menu22,
+#menubar,
+#myBtn {
     background-color: #287c7e;
     color: white;
     font-size: 20px;
+    z-index: 5000;
 }
 
-#menu21 p, #menu22 p{
+#menu21 p,
+#menu22 p {
     font-size: 16px;
     color: white;
 }
 
-.photo{
+.photo {
     border-radius: 15px;
     margin: auto;
     left: 0;
@@ -189,6 +196,6 @@ b{
     height: auto;
 }
 
-li{
+li {
     color: white;
 }
