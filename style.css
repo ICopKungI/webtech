@@ -30,116 +30,18 @@ p {
     z-index: 700;
 }
 
-#menubar {
-    top: 0%;
-    position: fixed;
-    width: 100%;
-    height: 8vh;
-    margin: 0;
-    padding: 0;
-}
-
 #homeicon,
-#menu1,
-#menu21,
-#menu22,
-#menu23:hover {
+.dropdown-toggle:hover {
     cursor: pointer;
-}
-
-#menu1 {
-    font-family: Rubik, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding-top: 3vh;
-    position: relative;
-    width: 25%;
-    display: inline-block;
-    height: 5vh;
-    transition: 0.5s;
-}
-
-#menu1:hover {
-    background-color: rgb(0, 95, 112);
-    transition: 0.5s;
-}
-
-#menu1down {
-    width: 100%;
-    position: fixed;
-}
-
-#menu21 {
-    left: 1%;
-    /* visibility: visible; */
-    visibility: hidden;
-    top: 8vh;
-    border: 0.2px solid black;
-    font-family: Rubik, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: black;
-    position: fixed;
-    width: 23%;
-    text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#menu22 {
-    left: 26%;
-    /* visibility: visible; */
-    visibility: hidden;
-    top: 8vh;
-    border: 0.2px solid black;
-    font-family: Rubik, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: black;
-    position: fixed;
-    width: 23%;
-    text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-
-/* #menu23 {
-    right: 10%;
-    visibility: visible;
-    visibility: hidden;
-    top: 8vh;
-    background-color: red;
-    font-family: Rubik, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #00d6d6;
-    position: fixed;
-    width: 23%;
-    text-align: center;
-} */
-
-#menu21 p:hover,
-#menu22 p:hover {
-    background-color: rgb(0, 108, 129);
-    border-radius: 10px;
 }
 
 #homeicon {
     z-index: 5001;
-    top: 2.25%;
+    top: 1%;
     right: 5%;
     position: fixed;
     width: 30px;
     height: 30px;
-}
-
-#dropdownicon1,
-#dropdownicon2,
-#dropdownicon3 {
-    padding-left: 5px;
-    width: 10px;
-    height: 10px;
-}
-
-.rotateimg180 {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
 }
 
 #myBtn {
@@ -178,20 +80,11 @@ b {
     font-size: 23px;
 }
 
-#menu21,
-#menu22,
-#menubar,
 #myBtn {
     background-color: #287c7e;
     color: white;
     font-size: 20px;
     z-index: 5000;
-}
-
-#menu21 p,
-#menu22 p {
-    font-size: 16px;
-    color: white;
 }
 
 .photo {
@@ -222,5 +115,5 @@ li {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #587a7c;
+    background: #324c4e;
   }
