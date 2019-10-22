@@ -207,3 +207,20 @@ b {
 li {
     color: white;
 }
+
+::-webkit-scrollbar {
+    width: 0.75%;
+  }
+
+::-webkit-scrollbar-track {
+    background: #287c7e; 
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #2b4041; 
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #587a7c;
+  }
