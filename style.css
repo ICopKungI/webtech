@@ -53,12 +53,18 @@ p {
     position: relative;
     width: 25%;
     display: inline-block;
+    height: 5vh;
+    transition: 0.5s;
+}
+
+#menu1:hover {
+    background-color: rgb(0, 95, 112);
+    transition: 0.5s;
 }
 
 #menu1down {
     width: 100%;
     position: fixed;
-    top: 8vh;
 }
 
 #menu21 {
@@ -113,7 +119,7 @@ p {
 
 #homeicon {
     z-index: 5001;
-    top: 2%;
+    top: 2.25%;
     right: 5%;
     position: fixed;
     width: 30px;
@@ -148,10 +154,12 @@ p {
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
+    transition: 0.5s;
 }
 
 #myBtn:hover {
     background-color: rgb(0, 95, 112);
+    transition: 0.5s;
     /* Chang background color on hover */
 }
 
