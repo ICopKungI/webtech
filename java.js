@@ -86,9 +86,9 @@ function write(myObj, type, num) {
         text += ('<p class=\"head1\">' + myObj.n_contagion[num].disease[0] + '</p><br>\n');
         text += ('<p class=\"head2\">&emsp;&emsp;&emsp;' + myObj.n_contagion[num].disease[1] + '</p><br>\n');
         text += loop_write(myObj.n_contagion[num].cause, myObj.n_contagion[num].img, 0);
-        text += loop_write(myObj.n_contagion[num].symptom, myObj.contagion[num].img, 1);
-        text += loop_write(myObj.n_contagion[num].therapy, myObj.contagion[num].img, 2);
-        text += loop_write(myObj.n_contagion[num].protect, myObj.contagion[num].img, 3);
+        text += loop_write(myObj.n_contagion[num].symptom, myObj.n_contagion[num].img, 1);
+        text += loop_write(myObj.n_contagion[num].therapy, myObj.n_contagion[num].img, 2);
+        text += loop_write(myObj.n_contagion[num].protect, myObj.n_contagion[num].img, 3);
     }
     main.innerHTML = text;
 }
