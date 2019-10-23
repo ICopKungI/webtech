@@ -4,13 +4,22 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+function setdiv(){
+    var x = document.getElementById('nav');
+    var style = window.getComputedStyle(x, null).getPropertyValue('height');
+    var height = parseFloat(style);
+    var div = document.querySelector('#main');
+    div.style.top = (height+35)+'px';
+    div.style.marginBottom = (height+75)+'px';
+}
+
 //ส่วน json
 
 function start(type, num) {
     document.getElementById("main").style.height = "100%";
     let requestURL = 'data.json';
     let request = new XMLHttpRequest();
-    request.onreadystatechange = function() {
+    request.onreadystatechange = function () {
         if (request.readyState == 4 && request.status == 200) {
             var myJSON = JSON.parse(request.responseText);
             write(myJSON, type, num);
@@ -39,6 +48,7 @@ function write(myObj, type, num) {
         text += loop_write(myObj.n_contagion[num].protect, [], 3);
     }
     main.innerHTML = text;
+    setdiv();
 }
 
 function loop_write(myObj1, myObj2, num) {
@@ -50,7 +60,7 @@ function loop_write(myObj1, myObj2, num) {
     }
     text += ('</ul><br>\n');
     if (num != 3) {
-        text += ('<img class="photo" src=\"' + myObj2[num] + "\">\n");
+        text += ('<img class=\"photo img-thumbnail\" src=\"' + myObj2[num] + "\">\n");
     }
     return text
 }

@@ -24,8 +24,7 @@ p {
     width: 80%;
     height: 100vh;
     z-index: -1;
-    margin-left: 8%;
-    margin-bottom: 1.75%;
+    margin-left: 10%;
     border-radius: 35px;
     z-index: 700;
 }
@@ -88,7 +87,6 @@ b {
 }
 
 .photo {
-    border-radius: 15px;
     margin: auto;
     left: 0;
     right: 0;
@@ -117,3 +115,7 @@ li {
 ::-webkit-scrollbar-thumb:hover {
     background: #324c4e;
   }
+
+footer{
+    background-color: black;
+}
