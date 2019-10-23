@@ -47,7 +47,7 @@ p {
     display: block;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 10px;
     /* z-index: 99; */
     border: none;
     outline: none;
@@ -101,21 +101,21 @@ li {
 
 ::-webkit-scrollbar {
     width: 0.75%;
-  }
+}
 
 ::-webkit-scrollbar-track {
-    background: #287c7e; 
-  }
+    background: #287c7e;
+}
 
 ::-webkit-scrollbar-thumb {
-    background: #2b4041; 
+    background: #2b4041;
     border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #324c4e;
-  }
+}
 
-footer{
+footer {
     background-color: black;
 }
