@@ -5,12 +5,20 @@ function topFunction() {
 }
 
 function setdiv(){
+    color();
     var x = document.getElementById('nav');
     var style = window.getComputedStyle(x, null).getPropertyValue('height');
     var height = parseFloat(style);
     var div = document.querySelector('#main');
     div.style.top = (height+35)+'px';
     div.style.marginBottom = (height+75)+'px';
+}
+
+function color() {
+    x = Math.floor(Math.random()*5)+1;
+    let div_color = document.getElementById("color");
+    div_color.innerHTML = "";
+    div_color.innerHTML = "<link rel=\"stylesheet\" href=\"color" + x + ".css\">";
 }
 
 //ส่วน json

@@ -1,0 +1,40 @@
+.container-fluid{
+    background-color: #d6b948;
+}
+
+#main{
+    background-color: #3f6c6e;
+}
+
+body{
+    background-color: #e0d9be;
+}
+
+footer {
+    background-color: #d6b948;
+}
+
+#myBtn {
+    background-color: #6b2a2a;
+    color: white;
+}
+
+#myBtn:hover {
+    background-color: #643939;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #633434;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8f3131;
+}
+
+::-webkit-scrollbar-track {
+    background: #644f4f;
+}
+
+li, p{
+    color: white;
+}
