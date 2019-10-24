@@ -1,4 +1,4 @@
-.container-fluid{
+.container-fluid, .dropdown-menu{
     background-color: #d6b948;
 }
 
@@ -35,6 +35,10 @@ footer {
     background: #644f4f;
 }
 
-li, p{
+li, p,.dropdown-menu>li>a, footer, .navbar-inverse .navbar-nav > li > a{
     color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: rgb(184, 184, 184);
 }
