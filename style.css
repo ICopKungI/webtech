@@ -5,6 +5,7 @@ html {
 body {
     margin: 0;
     z-index: 500;
+    
     /* background-image: url(https://scontent.fbkk6-2.fna.fbcdn.net/v/t1.0-1/p240x240/26903943_907729689392329_3488043223134455956_n.jpg?_nc_cat=101&_nc_eui2=AeF6n27XaBYMe_oZrbo-igVBkDoQ4PgchpF-9XqxEW_btvRc-jprm7czV92AsKfYlXmg8epU4Wn_m32JGKj4mAoTXs1gS1t6ePzNj6nquUH0ww&_nc_oc=AQn0OkAJHASL_HgGh5u2mmglHsNVT4xe3558HwkCFQZnITsZjvYydKoD46zZvdmtRrI&_nc_ht=scontent.fbkk6-2.fna&oh=8c8080ff463ced6a47e297f528c83a9b&oe=5E2935EF); */
 }
 
@@ -27,6 +28,13 @@ p {
     z-index: 700;
 }
 
+#index{    
+    top: 12vh;
+    position: relative;
+    padding: 2%;
+    height: 85vh;
+}
+
 #homeicon,
 .dropdown-toggle:hover {
     cursor: pointer;
@@ -39,6 +47,16 @@ p {
     position: fixed;
     width: 30px;
     height: 30px;
+}
+
+#icon {
+    z-index: 5001;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-brand{
+    padding-top: 10px;
 }
 
 #myBtn {
@@ -81,14 +99,18 @@ li {
 b {
     font-size: 23px;
 }
+.item {
+    width: 100%;
+    height: 50vh;
+}
 
 .photo {
     margin: auto;
     left: 0;
     right: 0;
     display: block;
-    width: 37.5%;
-    height: auto;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 li {
@@ -105,4 +127,13 @@ li {
 
 .dropdown-menu>li>a{
     border-radius: 5px;
+}
+
+footer{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.carousel-inner,.carousel-control{
+    border-radius: 15px;
 }

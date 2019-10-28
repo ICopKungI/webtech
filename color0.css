@@ -1,0 +1,49 @@
+.container-fluid, .dropdown-menu{
+    background-color: #277589;
+}
+
+
+body{
+    background-color: white;
+}
+
+footer {
+    background-color: #277589;
+}
+
+#myBtn {
+    background-color: #6b2a2a;
+    color: white;
+}
+
+#myBtn:hover {
+    background-color: #643939;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #633434;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8f3131;
+}
+
+::-webkit-scrollbar-track {
+    background: #644f4f;
+}
+
+li,.dropdown-menu>li>a, footer, .navbar-inverse .navbar-nav > li > a{
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: rgb(219, 219, 219);
+}
+
+.row, .p{
+    color: #277589;
+}
+
+.border-right{
+    border-right:3px solid #277589;
+}

@@ -4,18 +4,18 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function setdiv(){
+function setdiv() {
     color();
     var x = document.getElementById('nav');
     var style = window.getComputedStyle(x, null).getPropertyValue('height');
     var height = parseFloat(style);
     var div = document.querySelector('#main');
-    div.style.top = (height+35)+'px';
-    div.style.marginBottom = (height+75)+'px';
+    div.style.top = (height + 35) + 'px';
+    div.style.marginBottom = (height + 75) + 'px';
 }
 
 function color() {
-    x = Math.floor(Math.random()*5)+1;
+    x = Math.floor(Math.random() * 5) + 1;
     let div_color = document.getElementById("color");
     div_color.innerHTML = "";
     div_color.innerHTML = "<link rel=\"stylesheet\" href=\"color" + x + ".css\">";
@@ -24,6 +24,7 @@ function color() {
 //ส่วน json
 
 function start(type, num) {
+    try {document.getElementById("index").id = "main";}catch (err) {}
     document.getElementById("main").style.height = "100%";
     let requestURL = 'data.json';
     let request = new XMLHttpRequest();
@@ -42,33 +43,63 @@ function write(myObj, type, num) {
     let main = document.getElementById("main");
     main.innerHTML = "";
     if (type == 1) {
-        text += ("<p class=\"head1\">" + myObj.contagion[num].disease[0] + "</p><br>\n");
-        text += loop_write(myObj.contagion[num].cause, myObj.contagion[num].img, 0);
-        text += loop_write(myObj.contagion[num].symptom, myObj.contagion[num].img, 1);
-        text += loop_write(myObj.contagion[num].therapy, myObj.contagion[num].img, 2);
-        text += loop_write(myObj.contagion[num].protect, [], 3);
+        text += img(myObj.contagion[num].disease, myObj.contagion[num].img);
+        text += loop_write(myObj.contagion[num].cause,);
+        text += loop_write(myObj.contagion[num].symptom,);
+        text += loop_write(myObj.contagion[num].therapy,);
+        text += loop_write(myObj.contagion[num].protect);
     } else {
-        text += ('<p class=\"head1\">' + myObj.n_contagion[num].disease[0] + '</p><br>\n');
+        text += img(myObj.n_contagion[num].disease, myObj.n_contagion[num].img);
         text += ('<p class=\"head2\">&emsp;&emsp;&emsp;' + myObj.n_contagion[num].disease[1] + '</p><br>\n');
-        text += loop_write(myObj.n_contagion[num].cause, myObj.n_contagion[num].img, 0);
-        text += loop_write(myObj.n_contagion[num].symptom, myObj.n_contagion[num].img, 1);
-        text += loop_write(myObj.n_contagion[num].therapy, myObj.n_contagion[num].img, 2);
-        text += loop_write(myObj.n_contagion[num].protect, [], 3);
+        text += loop_write(myObj.n_contagion[num].cause);
+        text += loop_write(myObj.n_contagion[num].symptom);
+        text += loop_write(myObj.n_contagion[num].therapy);
+        text += loop_write(myObj.n_contagion[num].protect);
     }
     main.innerHTML = text;
     setdiv();
 }
 
-function loop_write(myObj1, myObj2, num) {
+function img(myObj1, myObj2) {
     let text = "";
-    text += ('<br><p class=\"head2\"><b>&emsp;&emsp;&emsp;' + myObj1[0] + '</b> ' + myObj1[1] + '</p>\n');
+    text += "<div class=\"container\">\n";
+    text += "<p class=\"head1\">" + myObj1[0] + "</p><br>\n";
+    text += "<div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\">\n";
+
+    text += "<ol class=\"carousel-indicators\">\n";
+    for (let i = 0; i < myObj2.length; i++) {
+        text += "<li data-target=\"#myCarousel\" data-slide-to=\"" + i + "\"";
+        if (i == 0) {
+            text +=  "class=\"active\" ";
+        }
+        text +=  "></li>\n";
+    }
+    text += "</ol>\n";
+
+    text += "<div class=\"carousel-inner\">\n";
+    for (let i = 0; i < myObj2.length; i++) {
+        text += "<div class=\"item";
+        if (i == 0) {
+            text +=  " active";
+        }
+        text +=  "\">\n";
+        text += "<img src=\"" + myObj2[i] + "\" class=\"photo\">\n</div>";
+    }
+    text += "</div>\n";
+    text += "<a class=\"left carousel-control\" href=\"#myCarousel\" data-slide=\"prev\">\n<span class=\"glyphicon glyphicon-chevron-left\"></span>\n<span class=\"sr-only\">Previous</span>\n</a>\n<a class=\"right carousel-control\" href=\"#myCarousel\" data-slide=\"next\">\n<span class=\"glyphicon glyphicon-chevron-right\"></span>\n<span class=\"sr-only\">Next</span>\n</a>\n";
+
+    text += "</div>\n";
+    text += "</div>\n";
+    return text
+}
+
+function loop_write(myObj, num) {
+    let text = "";
+    text += ('<br><p class=\"head2\"><b>&emsp;&emsp;&emsp;' + myObj[0] + '</b> ' + myObj[1] + '</p>\n');
     text += ('<ul>\n');
-    for (let i = 2; i < myObj1.length; i++) {
-        text += ('<li>' + myObj1[i] + '\n');
+    for (let i = 2; i < myObj.length; i++) {
+        text += ('<li>' + myObj[i] + '\n');
     }
     text += ('</ul><br>\n');
-    if (num != 3) {
-        text += ('<img class=\"photo img-thumbnail\" src=\"' + myObj2[num] + "\">\n");
-    }
     return text
 }
