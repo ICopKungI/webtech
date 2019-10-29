@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
     <link rel="icon" href="Photos/icon.png" type="image" sizes="16x16">
 </head>
 
-<body>
+<body onload="setdiv_index()">
     <script src="java.js"></script>
 
     <button class="btn btn-success" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -61,21 +61,21 @@
                     </ul>
                 </li>
 
-                <li><a href="#" onclick="">คณะผู้จัดทำ</a></li>
-                <li><a href="#" onclick="">อ้างอิง</a></li>
+                <li><a href="#" onclick="start(2, 'producer')">คณะผู้จัดทำ</a></li>
+                <li><a href="#" onclick="start(2, 'references')">อ้างอิง</a></li>
 
             </ul>
 
-            <a href="index.html"><img src="home.svg" id="homeicon"></a>
+            <a href="index.html" class="navbar-brand"><img src="home.svg" id="homeicon"></a>
 
         </div>
     </nav>
 
     <div id="index" class="page-main">
-        <div class="container text-center">
+        <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                    <p class="p">โรค
+                    <p class="p">&emsp;&emsp;&emsp;โรค
                         เป็นสภาวะผิดปกติของร่างกายหรือจิตใจของสิ่งมีชีวิตซึ่งทำให้การทำงานของร่างกายเสียไปหรืออาจทำให้เกิดอันตรายถึงชีวิต
                         โรคยังอาจหมายถึงภาวะการทำงานของร่างกายซึ่งทำให้เกิดอันตรายแก่ตัวเอง
                         ซึ่งจะแสดงออกมาเป็นอาการหรืออาการแสดงต่อโรคนั้น ๆ</p>
@@ -84,19 +84,19 @@
 
             <div class="row">
 
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 kanit border-right">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 border">
 
-                    <h3>โรคติดต่อ</h3>
-                    <p class="p">หมายถึง อาการผิดปรกติของร่างกาย เป็นสิ่งที่เกิดขึ้นได้ในสิ่งมีชีวิต
+                    <h3 class="head1">โรคติดต่อ</h3>
+                    <p class="p">&emsp;&emsp;&emsp;หมายถึง อาการผิดปรกติของร่างกาย เป็นสิ่งที่เกิดขึ้นได้ในสิ่งมีชีวิต
                         เป็นโรคที่มีการแพร่กระจายไปสู่คน
                         หรือสิ่งมีชีวิตได้ทั้งทางตรงและทางอ้อม</p>
 
                 </div>
 
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 kanit">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
 
-                    <h3>โรคไม่ติดต่อ</h3>
-                    <p class="p">คือ กลุ่มโรคเรื้อรังที่ไม่ได้เกิดจากการติดเชื้อ และไม่สามารถติดต่อหรือแพร่กระจายไปสู่ผู้อื่นได้
+                    <h3 class="head1">โรคไม่ติดต่อ</h3>
+                    <p class="p">&emsp;&emsp;&emsp;คือ กลุ่มโรคเรื้อรังที่ไม่ได้เกิดจากการติดเชื้อ และไม่สามารถติดต่อหรือแพร่กระจายไปสู่ผู้อื่นได้
                     </p>
 
                 </div>
@@ -115,7 +115,7 @@
 
     </footer>
     <div id="color">
-        <link rel="stylesheet" href="color0.css">
+        <link rel="stylesheet" href="css/color0.css">
     </div>
 </body>
 
