@@ -1,10 +1,47 @@
+body{
+    background-color: white;
+}
+
 .container-fluid, .dropdown-menu{
     background-color: #277589;
 }
 
+#index{    
+    top: 12vh;
+    position: relative;
+    padding: 2%;
+    height: 100vh;
+    font-size: 300%;
+    margin: 0;
+}
 
-body{
-    background-color: white;
+.head1{
+    font-size: 90%;
+}
+
+.bg{
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    padding-bottom: 3%;
+}
+
+.border{
+    border-right:1px solid #277589;
+}
+
+li,.dropdown-menu>li>a, footer, .navbar-inverse .navbar-nav > li > a{
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: rgb(219, 219, 219);
+}
+
+.row, .p, h3{
+    color: #277589;
+    font-size: 70%;
 }
 
 footer {
@@ -32,31 +69,6 @@ footer {
     background: #644f4f;
 }
 
-li,.dropdown-menu>li>a, footer, .navbar-inverse .navbar-nav > li > a{
-    color: white;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover{
-    color: rgb(219, 219, 219);
-}
-
-.row, .p, h3{
-    color: #277589;
-    font-size: 70%;
-}
-
-.border{
-    border-right:1px solid #277589;
-}
-
-#index{    
-    top: 12vh;
-    position: relative;
-    padding: 2%;
-    height: 100vh;
-    font-size: 300%;
-}
-
 @media screen and (max-width:600px) {
     .border{
         border-bottom:1px solid #277589;
@@ -68,6 +80,3 @@ li,.dropdown-menu>li>a, footer, .navbar-inverse .navbar-nav > li > a{
     }
 }
 
-.head1{
-    font-size: 90%;
-}

@@ -4,6 +4,9 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+
+
+//กำหนดความห่างของกล่องindexตรงกลางกับfooter และ menubar
 function setdiv_index() {
     document.getElementById("index").style.height = "100%";
     var x = document.getElementById('nav');
@@ -14,6 +17,9 @@ function setdiv_index() {
     div.style.marginBottom = (height + 75) + 'px';
 }
 
+
+
+//กำหนดความห่างของกล่องmainตรงกลางกับfooter และ menubar
 function setdiv() {
     color();
     var x = document.getElementById('nav');
@@ -24,6 +30,9 @@ function setdiv() {
     div.style.marginBottom = (height + 75) + 'px';
 }
 
+
+
+//สุ่มสี
 function color() {
     x = Math.floor(Math.random() * 5) + 1;
     let div_color = document.getElementById("color");
@@ -31,8 +40,9 @@ function color() {
     div_color.innerHTML = "<link rel=\"stylesheet\" href=\"css/color" + x + ".css\">";
 }
 
-//ส่วน json
 
+
+//ดึงข้อมูลจาก json และเปลี่ยน id ตรงกล่องตรงกลางถ้ากดดูหน้าอื่นที่ไม่ใช่หน้าแรก
 function start(type, num) {
     try {
         document.getElementById("main").style.height = "100%";
@@ -51,6 +61,9 @@ function start(type, num) {
     request.send();
 }
 
+
+
+//ส่วนเขียนเนื้อหาตรงกลางตามประเภทที่ได้รับค่ามา
 function write(myObj, type, num) {
     let text = "";
     let main = document.getElementById("main");
@@ -79,6 +92,9 @@ function write(myObj, type, num) {
     setdiv();
 }
 
+
+
+//เขียนหัวข้อเรื่องแล้วทำหน้สไลด์รูปภาพด้วย bootstrap
 function img(myObj1, myObj2) {
     let text = "";
     text += "<div class=\"container\">\n";
@@ -112,6 +128,9 @@ function img(myObj1, myObj2) {
     return text
 }
 
+
+
+//เขียนเนื้อหา
 function loop_write(myObj) {
     let text = "";
     text += ('<br><p class=\"head2\"><b>&emsp;&emsp;&emsp;' + myObj[0] + '</b> ' + myObj[1] + '</p>\n');
@@ -123,6 +142,9 @@ function loop_write(myObj) {
     return text
 }
 
+
+
+//เขียนหน้าคณะผู้จัดทำหรืออ้างอิง
 function other(myObj, check) {
     let text = "";
     let main = document.getElementById("main");
@@ -136,7 +158,7 @@ function other(myObj, check) {
         if (check) {
             text += "<a  href=\"https://" + myObj.content[i] + "\"  target=\"_blank\" class=\"other\">" +  myObj.content[i] + "</a></div>\n";
         }else{
-            text += "<p class=\"other\">" +  myObj.content[i] + "</p></div>\n";
+            text += "<p class=\"other_p\">" +  myObj.content[i] + "</p></div>\n";
         }
         text += '</div><br>\n';
     }
