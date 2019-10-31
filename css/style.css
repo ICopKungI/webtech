@@ -123,6 +123,8 @@ footer{
 .other, .other_p{
     font-size: 200%;
     color: white;
+    padding-top: 20%;
+    padding-bottom: 15%;
 }
 .other:hover{
     color: white;
