@@ -6,26 +6,19 @@ function topFunction() {
 
 
 
-//กำหนดความห่างของกล่องindexตรงกลางกับfooter และ menubar
-function setdiv_index() {
-    document.getElementById("index").style.height = "100%";
+//กำหนดความห่างของกล่องdivตรงกลางกับfooter และ menubar
+function setdiv(type) {
     var x = document.getElementById('nav');
     var style = window.getComputedStyle(x, null).getPropertyValue('height');
     var height = parseFloat(style);
-    var div = document.querySelector('#index');
-    div.style.top = (height + 35) + 'px';
-    div.style.marginBottom = (height + 75) + 'px';
-}
-
-
-
-//กำหนดความห่างของกล่องmainตรงกลางกับfooter และ menubar
-function setdiv() {
-    color();
-    var x = document.getElementById('nav');
-    var style = window.getComputedStyle(x, null).getPropertyValue('height');
-    var height = parseFloat(style);
-    var div = document.querySelector('#main');
+    var div;
+    if (type) {
+        document.getElementById("index").style.height = "100%";
+        div = document.querySelector('#index');
+    } else {
+        color();
+        div = document.querySelector('#main');
+    }
     div.style.top = (height + 35) + 'px';
     div.style.marginBottom = (height + 75) + 'px';
 }
@@ -89,7 +82,7 @@ function write(myObj, type, num) {
         }
     }
     main.innerHTML = text;
-    setdiv();
+    setdiv(0);
 }
 
 
@@ -156,13 +149,13 @@ function other(myObj, check) {
         text += "<div class=\"col-xl-6 col-lg-6 col-md-12 col-sm-12\"><center><img src=\"" + myObj.img[i] + "\" class=\"photo_other\"></center></div>\n";
         text += "<div class=\"col-xl-6 col-lg-6 col-md-12 col-sm-12\">";
         if (check) {
-            text += "<a  href=\"https://" + myObj.content[i] + "\"  target=\"_blank\" class=\"other\">" +  myObj.content[i] + "</a></div>\n";
-        }else{
-            text += "<p class=\"other_p\">" +  myObj.content[i] + "</p></div>\n";
+            text += "<a  href=\"https://" + myObj.content[i] + "\"  target=\"_blank\" class=\"other\">" + myObj.content[i] + "</a></div>\n";
+        } else {
+            text += "<p class=\"other_p\">" + myObj.content[i] + "</p></div>\n";
         }
         text += '</div><br>\n';
     }
     text += '</div>\n';
     return text;
-    
+
 }
