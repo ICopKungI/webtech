@@ -72,6 +72,18 @@ function write(myObj, type, num) {
     main.innerHTML = text;
 }
 
+//เขียนแถบหัวข้อ
+function header() {
+    let text = "";
+    text += "<ul class=\"nav nav-tabs\" role=\"tablist\">\n";
+    text += "<li class=\"nav-item\">\n<a class=\"nav-link active\" data-toggle=\"tab\" href=\"#cause\">\nสาเหตุุของโรค</a>\n</li>\n";
+    text += "<li class=\"nav-item\">\n<a class=\"nav-link\" data-toggle=\"tab\" href=\"#symptom\">\nอาการของโรค</a>\n</li>\n";
+    text += "<li class=\"nav-item\">\n<a class=\"nav-link\" data-toggle=\"tab\" href=\"#therapy\">\nวิธีรักษาโรค</a>\n</li>\n";
+    text += "<li class=\"nav-item\">\n<a class=\"nav-link\" data-toggle=\"tab\" href=\"#protect\">\nวิธีป้องกันโรค</a>\n</li>\n";
+    text += "</ul>\n";
+    return text;
+}
+
 
 //เขียนหัวข้อเรื่องแล้วทำหน้สไลด์รูปภาพด้วย bootstrap
 function img(myObj1, myObj2) {
@@ -105,18 +117,6 @@ function img(myObj1, myObj2) {
     text += "</div>\n";
     text += "</div><br></center>\n";
     return text
-}
-
-//เขียนแถบหัวข้อ
-function header() {
-    let text = "";
-    text += "<ul class=\"nav nav-tabs\" role=\"tablist\">\n";
-    text += "<li class=\"nav-item\">\n<a class=\"nav-link active\" data-toggle=\"tab\" href=\"#cause\">\nสาเหตุุของโรค</a>\n</li>\n";
-    text += "<li class=\"nav-item\">\n<a class=\"nav-link\" data-toggle=\"tab\" href=\"#symptom\">\nอาการของโรค</a>\n</li>\n";
-    text += "<li class=\"nav-item\">\n<a class=\"nav-link\" data-toggle=\"tab\" href=\"#therapy\">\nวิธีรักษาโรค</a>\n</li>\n";
-    text += "<li class=\"nav-item\">\n<a class=\"nav-link\" data-toggle=\"tab\" href=\"#protect\">\nวิธีป้องกันโรค</a>\n</li>\n";
-    text += "</ul>\n";
-    return text;
 }
 
 //เขียนเนื้อหา
