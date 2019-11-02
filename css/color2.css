@@ -1,5 +1,12 @@
-.container-fluid, .dropdown-menu{
+.navbar-fixed-top, .dropdown-menu{
     background-color: #2e1b66;
+}
+
+.nav-pills .nav-link.active, .dropdown-item.active, .nav-pills .show>.nav-link, .dropdown-item:active, .nav-tabs .nav-link.active{
+    background-color: #e0b69b;
+}
+.dropdown-item:hover{
+    background-color: #e0b69b;
 }
 
 #main{
@@ -12,6 +19,10 @@ body{
 
 footer {
     background-color: #2e1b66;
+}
+
+.blockquote-footer::before{
+    color: #2e1b66;
 }
 
 #myBtn {

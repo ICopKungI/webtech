@@ -1,5 +1,14 @@
-.container-fluid, .dropdown-menu{
+.navbar-fixed-top, .dropdown-menu{
     background-color: #d6b948;
+}
+
+.nav-pills .nav-link.active, .dropdown-item.active, .nav-pills .show>.nav-link, .dropdown-item:active, .nav-tabs .nav-link.active{
+    background-color: #644f4f;
+    border-radius: 5px;
+}
+.dropdown-item:hover{
+    background-color: #644f4f;
+    border-radius: 5px;
 }
 
 #main{
@@ -10,8 +19,12 @@ body{
     background-color: #e0d9be;
 }
 
-footer {
+footer{
     background-color: #d6b948;
+}
+
+.blockquote-footer::before{
+    color: #d6b948;
 }
 
 #myBtn {

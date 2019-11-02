@@ -6,69 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>โรคภัยใกล้ตัว</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
     <link rel="icon" href="Photos/icon.png" type="image" sizes="16x16">
 </head>
 
-<body onload="setdiv(1)">
+<body>
     <script src="java.js"></script>
 
     <button class="btn btn-success" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <a href="index.html"><img src="home.svg" id="homeicon"></a>
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand nav-pills navbar-collapse" id="nav" role="tablist">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand" id="nav">
+            <div class="navbar-brand padd"><img id="icon" src="Photos/icon.png"></div>
 
-        <div class="container-fluid">
-            <div href="#" class="navbar-brand"><img id="icon" src="Photos/icon.png"></div>
+            <ul class="nav nav-pills navbar-nav mr-auto" role="tablist">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle nav-pills paddl" data-toggle="dropdown">โรคติดต่อ</a>
+                      <div class="dropdown-menu nav-pills">
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#"  onclick="start(1, 0)">โรคเอดส์ (AIDS:Acquired Immune DeficiencySyndrome)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#"  onclick="start(1, 1)">โรคฉี่หนู หรือ โรคเลปโตสไปโรซิส(leptospirosis)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#"  onclick="start(1, 2)">โรคไวรัสตับอักเสบบี (Hepatitis B)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#"  onclick="start(1, 3)">โรคพิษสุนัขบ้า (hydrophobia)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#"  onclick="start(1, 4)">โรคไข้เลือดออก</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#"  onclick="start(1, 5)">โรคหนองใน โรคโกโนเรีย (Gonorrhea)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#"  onclick="start(1, 6)">โรควัณโรค (Tuberculosis)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#"  onclick="start(1, 7)">โรคไข้หวัดใหญ่ (Influenza)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#"  onclick="start(1, 8)">โรคตาแดง (conjuntiva)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#"  onclick="start(1, 9)">โรคซิฟิลิส (Syphilis)</a>
+                       </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle nav-pills paddl" data-toggle="dropdown">โรคไม่ติดต่อ</a>
+                      <div class="dropdown-menu nav-pills">
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#" onclick="start(0, 0)">โรคหืดหอบ (Asthma)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#" onclick="start(0, 1)">โรคกล้ามเนื้ออ่อนแรง (Myasthenia gravis)โรคเอ็มจี</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#" onclick="start(0, 2)">โรคเบาหวาน (Diabetes Mellitus)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#" onclick="start(0, 3)">โรคไทรอยด์ (Thyroid gland)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#" onclick="start(0, 4)">ไส้เลื่อน (Hernia)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#" onclick="start(0, 5)">โรคไฮเปอร์ หรือ สมาธิสั้น</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#" onclick="start(0, 6)">มะเร็งช่องปาก (Oral cancer)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#" onclick="start(0, 7)">นิ่วในไต (Kidney Stone)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#" onclick="start(0, 8)">โรคอัลไซเมอร์ (Alzheimer’s disease)</a>
+                        <a class="dropdown-item nav-pills" data-toggle="pill" href="#" onclick="start(0, 9)">โรคต้อกระจก (Cataract)</a>
+                       </div>
+                    </li>
+                    <li class="nav-item"><a class="paddl nav-link nav-pills" data-toggle="pill" href="#" onclick="start(2, 'producer')">คณะผู้จัดทำ</a></li>
+                    <li class="nav-item"><a class="paddl nav-link nav-pills" data-toggle="pill" href="#" onclick="start(3, 'references')">อ้างอิง</a></li>
+                  </ul>
 
-            <ul class="nav navbar-nav ">
+                
+                  
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">โรคติดต่อ <span
-                            class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" onclick="start(1, 0)">โรคเอดส์ (AIDS:Acquired Immune DeficiencySyndrome)</a>
-                        </li>
-                        <li><a href="#" onclick="start(1, 1)">โรคฉี่หนู หรือ โรคเลปโตสไปโรซิส(leptospirosis)</a></li>
-                        <li><a href="#" onclick="start(1, 2)">โรคไวรัสตับอักเสบบี (Hepatitis B)</a></li>
-                        <li><a href="#" onclick="start(1, 3)">โรคพิษสุนัขบ้า (hydrophobia)</a></li>
-                        <li><a href="#" onclick="start(1, 4)">โรคไข้เลือดออก</a></li>
-                        <li><a href="#" onclick="start(1, 5)">โรคหนองใน โรคโกโนเรีย (Gonorrhea)</a></li>
-                        <li><a href="#" onclick="start(1, 6)">โรควัณโรค (Tuberculosis)</a></li>
-                        <li><a href="#" onclick="start(1, 7)">โรคไข้หวัดใหญ่ (Influenza)</a></li>
-                        <li><a href="#" onclick="start(1, 8)">โรคตาแดง (conjuntiva)</a></li>
-                        <li><a href="#" onclick="start(1, 9)">โรคซิฟิลิส (Syphilis)</a></li>
-                    </ul>
-                </li>
+            <a href="index.html" class="navbar-brand navbar-nav"><img src="home.svg" id="homeicon"></a>
 
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">โรคไม่ติดต่อ <span
-                            class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" onclick="start(0, 0)">โรคหืดหอบ (Asthma)</a></li>
-                        <li><a href="#" onclick="start(0, 1)">โรคกล้ามเนื้ออ่อนแรง (Myasthenia gravis)โรคเอ็มจี</a></li>
-                        <li><a href="#" onclick="start(0, 2)">โรคเบาหวาน (Diabetes Mellitus)</a></li>
-                        <li><a href="#" onclick="start(0, 3)">โรคไทรอยด์ (Thyroid gland)</a></li>
-                        <li><a href="#" onclick="start(0, 4)">ไส้เลื่อน (Hernia)</a></li>
-                        <li><a href="#" onclick="start(0, 5)">โรคไฮเปอร์ หรือ สมาธิสั้น</a></li>
-                        <li><a href="#" onclick="start(0, 6)">มะเร็งช่องปาก (Oral cancer)</a></li>
-                        <li><a href="#" onclick="start(0, 7)">นิ่วในไต (Kidney Stone)</a></li>
-                        <li><a href="#" onclick="start(0, 8)">โรคอัลไซเมอร์ (Alzheimer’s disease)</a></li>
-                        <li><a href="#" onclick="start(0, 9)">โรคต้อกระจก (Cataract)</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#" onclick="start(2, 'producer')">คณะผู้จัดทำ</a></li>
-                <li><a href="#" onclick="start(2, 'references')">อ้างอิง</a></li>
-
-            </ul>
-
-            <a href="index.html" class="navbar-brand"><img src="home.svg" id="homeicon"></a>
-
-        </div>
     </nav>
 
     <div id="index" class="page-main">
@@ -111,7 +106,7 @@
     </div>
 
 
-    <footer class="py-3 kanit" id="footer">
+    <footer class="blockquote-footer" id="footer">
 
         <div class="container">
             <p class="m-0 text-center text-white">Copyright © 2019 | โรคภัยใกล้ตัว กลุ่มที่ 30 Project Web Technology

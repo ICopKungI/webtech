@@ -10,15 +10,29 @@ body {
 }
 
 #homeicon,
-.dropdown-toggle:hover {
+.dropdown-toggle:hover, .nav-tabs .nav-link:hover {
     cursor: pointer;
+}
+.padd{
+    padding-right: 1%;
+    margin: 0;
+    color: white;
+}
+
+.nav-link:hover{
+    color: rgb(161, 159, 159);    
+}
+
+.nav-pills .nav-link.active, .dropdown-item.active, .dropdown-item:active, .dropdown-item:hover{
+    border-radius: 5px;
+}
+
+.nav-link, .dropdown-item{
+    transition: 0.4s;
 }
 
 #homeicon {
     z-index: 5001;
-    top: 1%;
-    right: 5%;
-    position: fixed;
     width: 30px;
     height: 30px;
 }
@@ -29,10 +43,6 @@ body {
     height: 30px;
 }
 
-.navbar-brand{
-    padding-top: 10px;
-}
-
 #main {
     padding: 3%;
     top: 12vh;
@@ -40,10 +50,13 @@ body {
     width: 80%;
     height: 100vh;
     margin-left: 10%;
+    margin-bottom: 25vh;
     border-radius: 35px;
     z-index: 700;
 }
-
+.nav-tabs .nav-link.active, a, .nav-tabs .nav-link:hover{
+    color: white;
+}
 #myBtn {
     display: block;
     position: fixed;
@@ -56,8 +69,38 @@ body {
     padding: 15px;
     border-radius: 10px;
     font-size: 22px;
-    transition: 0.5s;
     z-index: 5000;
+}
+
+#part{
+    width: 90%;
+}
+
+.carousel-inner, #part{
+    border-radius: 15px;
+    height: 45vh;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover{
+    background-color: rgba(133, 133, 133, 0.534);
+    transition: 0.4s;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    transition: 0.4s;
+}
+.carousel-control-prev:hover{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.carousel-control-next:hover{
+    border-top-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.photo {
+    width: 100%;
+    height: 45vh !important;
 }
 
 
@@ -69,15 +112,6 @@ body {
 .item {
     width: 100%;
     height: 50vh;
-}
-
-.photo {
-    margin: auto;
-    left: 0;
-    right: 0;
-    display: block;
-    width: 100% !important;
-    height: 100% !important;
 }
 
 .head1 {
@@ -102,7 +136,7 @@ b {
     font-size: 22px;
 }
 
-li {
+li, .nav-pills , .nav-pills:hover{
     color: white;
 }
 
@@ -111,13 +145,8 @@ li {
 }
 
 footer{
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-}
-
-.carousel-inner,.carousel-control{
-    border-radius: 15px;
-    height: 45vh;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
 }
 
 .other, .other_p{
@@ -132,8 +161,8 @@ footer{
 }
 
 .photo_other{
-    width: 75% !important;
-    height: 75% !important;
+    width: 75%;
+    height: 75%;
     max-width: 350px;
     max-height: 350px;
     border-radius: 300px;
@@ -157,15 +186,23 @@ footer{
 
 @media screen and (max-width:600px) {
     #main{
-        font-size: 80%;
+        font-size: 60%;
     }
 }
 
 @media screen and (max-height:900px) {
-    .carousel-inner,.carousel-control{
-        height: 20vh;
+    .photo {
+        width: 100%;
+        height: 25vh !important;
     }
-    .container{
-        width: 95%;
+    .carousel-inner, #part{
+        border-radius: 15px;
+        height: 25vh;
+    }
+    #part{
+        width: 100%;
+    }
+    #main{
+        font-size: 60%;
     }
 }

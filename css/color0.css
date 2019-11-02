@@ -2,8 +2,15 @@ body{
     background-color: white;
 }
 
-.container-fluid, .dropdown-menu{
+.navbar-fixed-top, .dropdown-menu{
     background-color: #277589;
+}
+
+.nav-pills .nav-link.active, .dropdown-item.active, .nav-pills .show>.nav-link, .dropdown-item:active, .nav-tabs .nav-link.active{
+    background-color: #644f4f;
+}
+.dropdown-item:hover{
+    background-color: #644f4f;
 }
 
 #index{    
@@ -13,6 +20,7 @@ body{
     height: 100vh;
     font-size: 300%;
     margin: 0;
+    margin-bottom: 25vh;
 }
 
 .head1{
@@ -28,7 +36,8 @@ body{
 }
 
 .border{
-    border-right:1px solid #277589;
+    border: 0 !important;
+    border-right:1px solid #277589 !important;
 }
 
 li,.dropdown-menu>li>a, footer, .navbar-inverse .navbar-nav > li > a{
@@ -46,6 +55,10 @@ li,.dropdown-menu>li>a, footer, .navbar-inverse .navbar-nav > li > a{
 
 footer {
     background-color: #277589;
+}
+
+.blockquote-footer::before{
+    color: #277589;
 }
 
 #myBtn {
@@ -71,8 +84,9 @@ footer {
 
 @media screen and (max-width:600px) {
     .border{
-        border-bottom:1px solid #277589;
-        border-right:0;
+        border: 0 !important;
+        border-bottom:1px solid #277589 !important;
+        border-right:0 !important;
     }
 
     #index{

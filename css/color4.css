@@ -1,7 +1,13 @@
-.container-fluid, .dropdown-menu{
+.navbar-fixed-top, .dropdown-menu{
     background-color: #05072b;
 }
 
+.nav-pills .nav-link.active, .dropdown-item.activev, .nav-pills .show>.nav-link, .dropdown-item:active, .nav-tabs .nav-link.active{
+    background-color: #8e92d1;
+}
+.dropdown-item:hover{
+    background-color: #8e92d1;
+}
 #main{
     background-color: #05072b;
 }
@@ -10,8 +16,12 @@ body{
     background-color: white;
 }
 
-footer {
+footer{
     background-color: #05072b;
+}
+
+.blockquote-footer::before{
+    color: #05072b;
 }
 
 #myBtn {
