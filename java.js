@@ -128,11 +128,10 @@ function loop_write(myObj, id) {
         text += "fade\">";
     }
     text += ('<br><p class=\"head2\"><b>&emsp;&emsp;&emsp;' + myObj[0] + '</b> ' + myObj[1] + '</p>\n');
-    text += ('<ul>\n');
     for (let i = 2; i < myObj.length; i++) {
-        text += ('<li>' + myObj[i] + '\n');
+        text += ('<p>&emsp;- ' + myObj[i] + '</p><br>\n');
     }
-    text += ('</ul>\n</div><br>\n');
+    text += ('</div><br>\n');
     return text
 }
 

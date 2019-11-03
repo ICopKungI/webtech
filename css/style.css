@@ -45,12 +45,12 @@ body {
 
 #main {
     padding: 3%;
-    top: 12vh;
+    top: 8vh;
     position: relative;
     width: 80%;
     height: 100vh;
     margin-left: 10%;
-    margin-bottom: 25vh;
+    margin-bottom: 20vh;
     border-radius: 35px;
     z-index: 700;
 }
@@ -150,7 +150,7 @@ footer{
 }
 
 .other, .other_p{
-    font-size: 200%;
+    font-size: 175%;
     color: white;
     padding-top: 20%;
     padding-bottom: 15%;
@@ -161,8 +161,8 @@ footer{
 }
 
 .photo_other{
-    width: 75%;
-    height: 75%;
+    width: 85%;
+    height: 85%;
     max-width: 350px;
     max-height: 350px;
     border-radius: 300px;
@@ -203,6 +203,8 @@ footer{
         width: 100%;
     }
     #main{
-        font-size: 60%;
+        font-size: 70%;
+        width: 100%;
+        margin-left: 0;
     }
 }

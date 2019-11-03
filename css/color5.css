@@ -2,12 +2,18 @@
     background-color: #889189;
 }
 
-.nav-pills .nav-link.active, .dropdown-item.active, .nav-pills .show>.nav-link, .dropdown-item:active, .nav-tabs .nav-link.active{
+.nav-pills .nav-link.active, .dropdown-item.active, .nav-pills .show>.nav-link, .dropdown-item:active, .nav-tabs .nav-link.active, .dropdown-item:hover, .nav-tabs .nav-link:hover{
+    background-color: #a8beaa;
+    border-color: #a8beaa;
+    border-radius: 5px;
+}
+
+.nav, .nav-tabs{
+    border-bottom: 0;
+    border-radius: 5px;
     background-color: #6d6d6d;
 }
-.dropdown-item:hover{
-    background-color: #6d6d6d;
-}
+
 #main{
     background-color: #1C4E2A;
 }
@@ -38,7 +44,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #9bc9a1;
+    background: #a8beaa;
 }
 
 ::-webkit-scrollbar-track {

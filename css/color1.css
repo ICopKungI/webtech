@@ -2,13 +2,16 @@
     background-color: #d6b948;
 }
 
-.nav-pills .nav-link.active, .dropdown-item.active, .nav-pills .show>.nav-link, .dropdown-item:active, .nav-tabs .nav-link.active{
-    background-color: #644f4f;
+.nav-pills .nav-link.active, .dropdown-item.active, .nav-pills .show>.nav-link, .dropdown-item:active, .nav-tabs .nav-link.active, .dropdown-item:hover, .nav-tabs .nav-link:hover{
+    background-color: #633434;
+    border-color: #633434;
     border-radius: 5px;
 }
-.dropdown-item:hover{
-    background-color: #644f4f;
+
+.nav, .nav-tabs{
+    border-bottom: 0;
     border-radius: 5px;
+    background-color: #644f4f;
 }
 
 #main{
