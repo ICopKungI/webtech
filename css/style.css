@@ -186,6 +186,7 @@ footer{
     max-height: 350px;
     border-radius: 300px;
     border: white 3px solid;
+    background-color: white;
 }
 
 .container{
