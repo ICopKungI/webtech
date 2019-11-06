@@ -59,15 +59,6 @@ footer {
     color: #277589;
 }
 
-#myBtn {
-    background-color: #6b2a2a;
-    color: white;
-}
-
-#myBtn:hover {
-    background-color: #643939;
-}
-
 ::-webkit-scrollbar-thumb {
     background: #633434;
 }
@@ -92,3 +83,11 @@ footer {
     }
 }
 
+
+#return-to-top {
+    background: #633434;
+}
+
+#return-to-top:hover {
+    background: #8f3131;
+}

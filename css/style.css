@@ -68,6 +68,7 @@ body {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    z-index: 500000;
 }
 #return-to-top i {
     color: #fff;
