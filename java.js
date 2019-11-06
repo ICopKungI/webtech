@@ -1,7 +1,17 @@
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 150) {        // If page is scrolled more than 150px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 10);
+    });
 }
 
 
@@ -76,7 +86,7 @@ function write(myObj, type, num) {
 function header() {
     let text = "<nav class=\"navbar navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-expand-xl\">\n";
     text += "<div class=\"container\">\n<div class=\"navbar-collapse\">";
-    text += "<ul class=\"nav nav-tabs navbar-nav nav-fill w-100\" role=\"tablist\">\n";
+    text += "<ul class=\"nav nav-tabs navbar-nav nav-fill w-100\" role=\"tablist\" id=\"cc\">\n";
     text += "<li class=\"nav-item\">\n<a class=\"nav-link active\" data-toggle=\"tab\" href=\"#cause\">\nสาเหตุุของโรค</a>\n</li>\n";
     text += "<li class=\"nav-item\">\n<a class=\"nav-link\" data-toggle=\"tab\" href=\"#symptom\">\nอาการของโรค</a>\n</li>\n";
     text += "<li class=\"nav-item\">\n<a class=\"nav-link\" data-toggle=\"tab\" href=\"#therapy\">\nวิธีรักษาโรค</a>\n</li>\n";

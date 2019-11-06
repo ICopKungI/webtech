@@ -8,7 +8,7 @@
     border-radius: 5px;
 }
 
-.nav, .nav-tabs{
+#cc{
     border-bottom: 0;
     border-radius: 5px;
     background-color: #e0b69b;
@@ -57,4 +57,12 @@ li, p,.dropdown-menu>li>a, footer, .navbar-inverse .navbar-nav > li > a{
 
 .navbar-inverse .navbar-nav > li > a:hover{
     color: rgb(219, 219, 219);
+}
+
+#return-to-top {
+    background: #c1825b;
+}
+
+#return-to-top:hover {
+    background: #e48246;
 }

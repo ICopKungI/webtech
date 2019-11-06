@@ -1,54 +1,37 @@
-.navbar-fixed-top, .dropdown-menu{
-    background-color: #333333;
+.navbar-fixed-top, .dropdown-menu, footer, #main{
+    background-color: #1D6A96;
 }
 
 .nav-pills .nav-link.active, .dropdown-item.active, .nav-pills .show>.nav-link, .dropdown-item:active, .nav-tabs .nav-link.active, .dropdown-item:hover, .nav-tabs .nav-link:hover{
-    background-color: #cc9133;
-    border-color: #cc9133;
+    background-color: #273b42;
+    border-color: #273b42;
     border-radius: 5px;
 }
 
-.nav, .nav-tabs{
+#cc{
     border-bottom: 0;
     border-radius: 5px;
-    background-color: #e9c791;
-}
-
-#main{
-    background-color: #333333;
+    background-color: #606b6e;
 }
 
 body{
-    background-color: white;
-}
-
-footer {
-    background-color: #333333;
+    background-color: #85b8cb;
 }
 
 .blockquote-footer::before{
     color: #333333;
 }
 
-#myBtn {
-    background-color: #cc9133;
-    color: white;
-}
-
-#myBtn:hover {
-    background-color: #e9c791;
-}
-
 ::-webkit-scrollbar-thumb {
-    background: #cc9133;
+    background: #273b42;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #eb9e22;
+    background: #416e7e;
 }
 
 ::-webkit-scrollbar-track {
-    background: #e9c791;
+    background: #606b6e;
 }
 
 li, p,.dropdown-menu>li>a, footer, .navbar-inverse .navbar-nav > li > a{
@@ -57,4 +40,12 @@ li, p,.dropdown-menu>li>a, footer, .navbar-inverse .navbar-nav > li > a{
 
 .navbar-inverse .navbar-nav > li > a:hover{
     color: rgb(219, 219, 219);
+}
+
+#return-to-top {
+    background: #273b42;
+}
+
+#return-to-top:hover {
+    background: #416e7e;
 }
