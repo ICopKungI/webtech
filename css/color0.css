@@ -13,18 +13,12 @@ body{
     background-color: #644f4f;
 }
 
-#index{    
-    top: 8vh;
+#index{
+    padding: 3%;
     position: relative;
-    padding: 2%;
     height: 100vh;
     font-size: 300%;
     margin: 0;
-    margin-bottom: 20vh;
-}
-
-test{
-    padding-bottom: 10vh;
 }
 .head1{
     font-size: 90%;

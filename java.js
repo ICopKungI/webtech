@@ -74,13 +74,14 @@ function write(myObj, type, num) {
 
 //เขียนแถบหัวข้อ
 function header() {
-    let text = "";
-    text += "<ul class=\"nav nav-tabs\" role=\"tablist\">\n";
+    let text = "<nav class=\"navbar navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-expand-xl\">\n";
+    text += "<div class=\"container\">\n<div class=\"navbar-collapse\">";
+    text += "<ul class=\"nav nav-tabs navbar-nav nav-fill w-100\" role=\"tablist\">\n";
     text += "<li class=\"nav-item\">\n<a class=\"nav-link active\" data-toggle=\"tab\" href=\"#cause\">\nสาเหตุุของโรค</a>\n</li>\n";
     text += "<li class=\"nav-item\">\n<a class=\"nav-link\" data-toggle=\"tab\" href=\"#symptom\">\nอาการของโรค</a>\n</li>\n";
     text += "<li class=\"nav-item\">\n<a class=\"nav-link\" data-toggle=\"tab\" href=\"#therapy\">\nวิธีรักษาโรค</a>\n</li>\n";
     text += "<li class=\"nav-item\">\n<a class=\"nav-link\" data-toggle=\"tab\" href=\"#protect\">\nวิธีป้องกันโรค</a>\n</li>\n";
-    text += "</ul>\n";
+    text += "</ul>\n</div>\n</div>\n</nav>\n";
     return text;
 }
 
