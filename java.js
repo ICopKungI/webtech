@@ -14,7 +14,6 @@ function topFunction() {
     });
 }
 
-
 //สุ่มสี
 function color() {
     x = Math.floor(Math.random() * 5) + 1;

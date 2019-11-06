@@ -1,6 +1,7 @@
-.navbar-fixed-top, .dropdown-menu, footer, #main{
+.navbar-fixed-top, .dropdown-menu, footer, #main, .navbar-toggler{
     background-color: #AE4951;
 }
+
 
 .nav-pills .nav-link.active, .dropdown-item.active, .nav-pills .show>.nav-link, .dropdown-item:active, .nav-tabs .nav-link.active, .dropdown-item:hover, .nav-tabs .nav-link:hover{
     background-color: #57233a;
@@ -14,21 +15,12 @@
     background-color: #5c3e4b;
 }
 
+.blockquote-footer::before{
+    color: #AE4951;
+}
+
 body{
     background-color: #B88C71;
-}
-
-.blockquote-footer::before{
-    color: #d6b948;
-}
-
-#myBtn {
-    background-color: #6b2a2a;
-    color: white;
-}
-
-#myBtn:hover {
-    background-color: #643939;
 }
 
 ::-webkit-scrollbar-thumb {

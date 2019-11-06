@@ -1,4 +1,4 @@
-.navbar-fixed-top, .dropdown-menu{
+.navbar-fixed-top, .dropdown-menu, footer, #main, .navbar-toggler{
     background-color: #2e1b66;
 }
 
@@ -14,29 +14,12 @@
     background-color: #e0b69b;
 }
 
-#main{
-    background-color: #2e1b66;
-}
-
 body{
     background-color: #8070af;
 }
 
-footer {
-    background-color: #2e1b66;
-}
-
 .blockquote-footer::before{
     color: #2e1b66;
-}
-
-#myBtn {
-    background-color: #c1825b;
-    color: white;
-}
-
-#myBtn:hover {
-    background-color: #e0b69b;
 }
 
 ::-webkit-scrollbar-thumb {

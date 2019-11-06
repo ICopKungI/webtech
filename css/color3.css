@@ -1,4 +1,4 @@
-.navbar-fixed-top, .dropdown-menu, footer, #main{
+.navbar-fixed-top, .dropdown-menu, footer, #main, .navbar-toggler{
     background-color: #1D6A96;
 }
 
@@ -19,7 +19,7 @@ body{
 }
 
 .blockquote-footer::before{
-    color: #333333;
+    color: #1D6A96;
 }
 
 ::-webkit-scrollbar-thumb {

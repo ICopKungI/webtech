@@ -35,6 +35,13 @@ body {
     width: 40px;
     height: 40px;
 }
+.navbar-light{
+    color: white;
+}
+.navbar-toggler{
+    background-color:#277589;
+    border: 2px white solid ;
+}
 
 #main {
     padding: 3%;
@@ -230,5 +237,13 @@ footer{
     }
     .container{
         width: 100%;
+    }
+    .navbar{
+        padding: 5px;
+    }
+    .dropdown-item{
+        padding-right: 0;
+        padding-left: 0;
+        border-color: white;
     }
 }
