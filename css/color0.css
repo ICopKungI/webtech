@@ -14,21 +14,24 @@ body{
 }
 
 #index{    
-    top: 12vh;
+    top: 8vh;
     position: relative;
     padding: 2%;
     height: 100vh;
     font-size: 300%;
     margin: 0;
-    margin-bottom: 25vh;
+    margin-bottom: 20vh;
 }
 
+test{
+    padding-bottom: 10vh;
+}
 .head1{
     font-size: 90%;
 }
 
 .bg{
-    width: 100%;
+    width: 80%;
     position: relative;
     left: 0;
     right: 0;
@@ -50,7 +53,7 @@ li,.dropdown-menu>li>a, footer, .navbar-inverse .navbar-nav > li > a{
 
 .row, .p, h3{
     color: #277589;
-    font-size: 70%;
+    font-size: 65%;
 }
 
 footer {
@@ -82,7 +85,7 @@ footer {
     background: #644f4f;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:575px) {
     .border{
         border: 0 !important;
         border-bottom:1px solid #277589 !important;
